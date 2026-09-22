@@ -7,7 +7,9 @@
     "lint:js": "eslint .",
     "lint:css": "stylelint \"blocks/**/*.css\" \"styles/*.css\"",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix"
+    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
+    "setup:skills": "npx skills add adobe/skills/plugins/aem/edge-delivery-services --all && npx skills add adobe/skills/plugins/aem/edge-delivery-services-content-ops --all && npx skills add adobe/skills/plugins/aem/project-management --all",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
     "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.32.0",
+    "playwright": "^1.63.0",
+    "prettier": "^3.9.8",
     "stylelint": "17.15.0",
     "stylelint-config-standard": "40.0.0"
   }
