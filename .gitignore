@@ -8,6 +8,12 @@ helix-importer-ui
 *.bak
 .idea
 
+# Skills installed via `npm run setup:skills` (npx skills) - regenerate from skills-lock.json
+agent/
+.agents/
+.claude/skills
+.claude/settings.local.json
+
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
