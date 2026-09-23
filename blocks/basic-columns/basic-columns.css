@@ -1,0 +1,9 @@
+.basic-columns > div {
+  display: block;
+}
+
+.basic-columns-image img {
+  width: 235px;
+  height: 110px;
+  display: block;
+}

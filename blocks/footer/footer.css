@@ -1,20 +1,101 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: rgb(250 250 250);
+  font-family: Roboto, sans-serif;
+}
+
+/* defensive fallback: section-metadata is normally consumed + removed by the
+   server-side preview pipeline; local --html-folder preview may not run that
+   step, so hide it directly rather than let it render as a visible leftover */
+footer .footer .section-metadata {
+  display: none;
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: 990px;
+  padding: 30px 15px 0;
 }
 
 footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+footer .footer h3 {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgb(89 89 91);
+  margin: 0 0 12px;
+}
+
+footer .footer .columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer .columns a {
+  display: block;
+  color: rgb(89 89 91);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 7px 0;
+  text-decoration: none;
+}
+
+footer .footer .section.social {
+  padding: 24px 0 32px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+footer .footer .section.social p:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgb(89 89 91);
+  margin-right: 8px;
+}
+
+footer .footer .section.social p:last-child {
+  display: flex;
+  gap: 14px;
+}
+
+footer .footer .section.social .icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* full-bleed purple bottom bar, breaking out of the 990px footer container */
+footer .footer .section.bottom {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background: rgb(77 20 140);
+  color: #fff;
+  font-size: 12px;
+  padding: 16px 0;
+}
+
+footer .footer .section.bottom > div {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+footer .footer .section.bottom a {
+  color: #fff;
+  text-decoration: none;
 }

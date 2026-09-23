@@ -17,3 +17,11 @@ agent/
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# >>> stardust
+.env
+.env.*
+# <<< stardust
+
+# Local-only content preview scaffold (aem up --html-folder) — never real DA content
+.localpreview/

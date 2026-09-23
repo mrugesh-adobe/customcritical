@@ -10,6 +10,7 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  getMetadata,
 } from './aem.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
@@ -162,6 +163,11 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  const template = getMetadata('template');
+  if (template) {
+    // template-scoped CSS override, loaded eagerly to avoid a style flash on LCP content
+    loadCSS(`${window.hlx.codeBasePath}/styles/${template}.css`);
+  }
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);

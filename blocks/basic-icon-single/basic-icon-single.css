@@ -1,0 +1,11 @@
+.basic-icon-single-icon {
+  float: left;
+  margin-right: 8px;
+}
+
+.basic-icon-single-icon img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+

@@ -1,0 +1,41 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T00:00:00Z"
+  },
+  "pageTypes": [
+    {
+      "type": "owner-operator-recruiting",
+      "archetypeSlug": "us-owneroperator-default-shtml",
+      "prototypePath": "stardust/prototypes/us-owneroperator-default-shtml-proposed.html",
+      "sourceUrl": "https://customcritical.fedex.com/us/owneroperator/default.shtml",
+      "breakpoints": {
+        "1440": {
+          "iterationsUsed": 3,
+          "iterationCap": 3,
+          "contentDiff": { "structuralFindings": 0, "result": "none — content + roles match" },
+          "visualDiff": {
+            "flags": [
+              "IMAGERY GAP (17 vs 6 <img> tags) — justified: footer/search icons authored as CSS background-image on <a>/<span> (pixel-identical, confirmed by the pixel probe), not literal <img class=sprite-placeholder> tags; remaining gap is live's hidden dropdown-menu icons, not visible in the static closed-state render."
+            ]
+          },
+          "pixelDiff": { "finalPct": 3.16, "threshold": 10, "pass": true },
+          "heightDeltaPx": -10,
+          "heightDeltaBar": 8,
+          "residual": "10px over the height-delta warning bar (not a hard gate item). Traced to ~12px of unattributed spacing inside the three stacked .col (basic-columns) blocks in #col-main; root cause not isolated within the 3-iteration cap. Documented residual, not iterated further."
+        },
+        "360": {
+          "iterationsUsed": 3,
+          "iterationCap": 3,
+          "contentDiff": { "structuralFindings": 0, "result": "none — content + roles match" },
+          "pixelDiff": { "finalPct": 6.56, "threshold": 10, "pass": true },
+          "heightDeltaPx": -1,
+          "heightDeltaBar": 8,
+          "residual": "Remaining hot bands are the known fixed-header/footer chunk-boundary repeat artifact inherent to scroll-and-stitch capture of position:fixed chrome (documented in recreation-procedure.md § Fixed and sticky chrome), plus one detailed high-contrast photo (235x110oo3.jpg) that is sensitive to sub-pixel offset in pixelmatch — same photo was the hottest single element at 1440 too."
+        }
+      },
+      "motion": { "observed": false, "implemented": false, "dead": [], "note": "motion-observe not run this pass — static gate only, per the skill's documented precedent (interaction parity optional; static-only shipped is a valid, recorded outcome)." },
+      "approvalStatus": "pending-user-approval"
+    }
+  ]
+}

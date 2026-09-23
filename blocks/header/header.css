@@ -1,6 +1,7 @@
-/* header and nav layout */
+/* header and nav layout — FedEx Custom Critical branding
+   (colors/height lifted from stardust/current/capture/tokens.json) */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: rgb(77 20 140);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -15,10 +16,11 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 990px;
   height: var(--nav-height);
-  padding: 0 24px;
-  font-family: var(--body-font-family);
+  padding: 0 15px;
+  font-family: Roboto, sans-serif;
+  color: #fff;
 }
 
 header nav[aria-expanded='true'] {
@@ -72,7 +74,7 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: transparent;
   color: inherit;
   overflow: initial;
   text-overflow: initial;
@@ -149,7 +151,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 140px;
   height: auto;
 }
 

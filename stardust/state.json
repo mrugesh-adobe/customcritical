@@ -1,0 +1,43 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T00:00:00Z",
+    "stardustVersion": "0.23.1"
+  },
+  "site": {
+    "originUrl": "https://customcritical.fedex.com/us/owneroperator/default.shtml",
+    "deployUrl": null,
+    "extractedAt": "2026-09-22T14:29:49.713Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-23T00:00:00Z",
+    "phrase": "/stardust:replica https://customcritical.fedex.com/us/owneroperator/default.shtml",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "flow": "replica",
+  "flowChosenAt": "2026-09-22T00:00:00Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "us-owneroperator-default-shtml",
+      "url": "https://customcritical.fedex.com/us/owneroperator/default.shtml",
+      "title": "Expedite Owner Operators, Expedited Transportation, Independent Contractors",
+      "type": "owner-operator-recruiting",
+      "status": "prototyped",
+      "history": [
+        { "status": "extracted", "at": "2026-09-22T14:29:49.713Z" },
+        { "status": "directed", "at": "2026-09-23T00:00:00Z" },
+        { "status": "prototyped", "at": "2026-09-23T00:00:00Z" }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/us-owneroperator-default-shtml.json",
+      "prototypePath": "stardust/prototypes/us-owneroperator-default-shtml-proposed.html",
+      "migratedPath": null
+    }
+  ]
+}

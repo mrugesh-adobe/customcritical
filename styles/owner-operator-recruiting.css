@@ -1,0 +1,65 @@
+/*
+ * Template-scoped fidelity override for the "owner-operator-recruiting" page.
+ * The live source's own content stylesheets 404 (see DESIGN.md), so its body
+ * content renders in the browser's default UA styles inside a fixed
+ * non-responsive column. This file undoes the project boilerplate's generic
+ * styling (styles/styles.css) for THIS page's main content only, reverting
+ * to browser defaults, and re-applies the fixed-width layout the gated
+ * prototype (stardust/prototypes/us-owneroperator-default-shtml-proposed.html)
+ * measured. Header/footer keep their own branded CSS — unaffected here.
+ */
+
+body.owner-operator-recruiting main {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body.owner-operator-recruiting main :is(h1, h2, h3, h4, h5, h6) {
+  font-family: revert;
+  font-weight: revert;
+  line-height: revert;
+  margin-top: revert;
+  margin-bottom: revert;
+  font-size: revert;
+  scroll-margin: revert;
+}
+
+body.owner-operator-recruiting main :is(p, ul, ol, dl, pre, blockquote) {
+  margin-top: revert;
+  margin-bottom: revert;
+}
+
+body.owner-operator-recruiting main a:any-link {
+  color: revert;
+  text-decoration: revert;
+  overflow-wrap: revert;
+}
+
+body.owner-operator-recruiting main a:hover {
+  color: revert;
+  text-decoration: revert;
+}
+
+/* fixed-width, non-responsive column — matches the live site at every viewport */
+body.owner-operator-recruiting main > .section {
+  margin: 0;
+}
+
+body.owner-operator-recruiting main > .section > div {
+  max-width: 990px;
+  width: 990px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* banner section: full body-width container, image itself fixed at its
+   intrinsic size and flush left (not centered, not fluid) */
+body.owner-operator-recruiting main > .section:first-of-type > div {
+  max-width: none;
+  width: auto;
+}
+
+body.owner-operator-recruiting main > .section:first-of-type img {
+  width: 745px;
+  max-width: none;
+  height: 150px;
+}

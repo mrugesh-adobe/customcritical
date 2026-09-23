@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-09-23T05:17:10.105Z",
+        "reason": "replica fidelity: Roboto is the live source site's actual computed font-family (verified via stardust/current/capture/tokens.json), not a stylistic choice — this is a pixel-fidelity replica, not a new design"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/us-owneroperator-default-shtml-proposed.html"
+        ],
+        "createdAt": "2026-09-23T05:17:10.877Z",
+        "reason": "replica fidelity: footer bottom-bar spacing is centered/matched to the live site's own layout; the source-fidelity pixel gate (3.16%/6.56%, both under the 10% bar) is the authority for this recreation, not general design-taste heuristics"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{ "ts": "2026-09-22T14:16:49Z", "skill": "stardust:replica", "phase": "setup", "event": "start", "detail": "flow=replica stamped; pixel deps installed; scripts copied" }
+{ "ts": "2026-09-22T14:16:49Z", "skill": "stardust:replica", "phase": "setup", "event": "end" }
+{ "ts": "2026-09-23T04:42:24Z", "skill": "stardust:replica", "phase": "extract", "event": "end", "detail": "bounded single-page pilot, 1/1 captured", "artifact": "stardust/current/pages/us-owneroperator-default-shtml.json" }
+{ "ts": "2026-09-23T04:42:24Z", "skill": "stardust:replica", "phase": "preserve-direction", "event": "end", "detail": "bounded-single promotion; empty inconsistency register (pure replica)", "artifact": "stardust/direction.md" }
+{ "ts": "2026-09-23T04:42:24Z", "skill": "stardust:replica", "phase": "recreate", "event": "end", "detail": "1 archetype authored", "artifact": "stardust/prototypes/us-owneroperator-default-shtml-proposed.html" }
+{ "ts": "2026-09-23T04:42:24Z", "skill": "stardust:replica", "phase": "source-fidelity-gate", "event": "end", "detail": "1440: 3.16% pass, height -10px; 360: 6.56% pass, height -1px; both 0 structural content-diff findings", "artifact": "stardust/replica/progress.json" }

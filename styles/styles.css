@@ -37,7 +37,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 75px;
 }
 
 /* fallback fonts */
@@ -293,6 +293,14 @@ main img {
 .icon img {
   height: 100%;
   width: 100%;
+}
+
+/* defensive fallback: the page Metadata block is normally consumed and
+   removed by the server-side preview pipeline; local --html-folder preview
+   doesn't run that step, so hide it directly rather than let it render as
+   visible leftover text */
+main .metadata {
+  display: none;
 }
 
 /* sections */

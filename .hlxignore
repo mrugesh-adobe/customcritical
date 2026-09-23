@@ -7,3 +7,4 @@ package-lock.json
 skills-lock.json
 test/*
 sync-block-collection.sh
+stardust/
